@@ -548,18 +548,6 @@ Wire Wire Line
 	4850 4700 850  4700
 Text Label 850  4700 0    50   ~ 0
 SID_CLK
-Wire Wire Line
-	850  4900 4850 4900
-Wire Bus Line
-	4600 4800 4600 5500
-Wire Bus Line
-	6150 1250 6150 2800
-Wire Bus Line
-	8000 2800 8000 5750
-Wire Bus Line
-	6250 4800 6250 5750
-Wire Bus Line
-	4850 1250 4850 2850
 $Comp
 L Connector:Micro_SD_Card_Det_Hirose_DM3AT J1
 U 1 1 5BEC49D0
@@ -571,4 +559,299 @@ F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catal
 	1    2100 6700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CCF6A75
+P 8950 5500
+F 0 "SW?" H 8950 5650 50  0000 C CNN
+F 1 "SW_Push" H 8950 5450 50  0000 C CNN
+F 2 "" H 8950 5700 50  0001 C CNN
+F 3 "" H 8950 5700 50  0001 C CNN
+	1    8950 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CCF6E46
+P 8550 5600
+F 0 "SW?" H 8550 5750 50  0000 C CNN
+F 1 "SW_Push" H 8550 5550 50  0000 C CNN
+F 2 "" H 8550 5800 50  0001 C CNN
+F 3 "" H 8550 5800 50  0001 C CNN
+	1    8550 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CCF6E76
+P 9400 4700
+F 0 "SW?" H 9400 4850 50  0000 C CNN
+F 1 "SW_Push" H 9400 4650 50  0000 C CNN
+F 2 "" H 9400 4900 50  0001 C CNN
+F 3 "" H 9400 4900 50  0001 C CNN
+	1    9400 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CCF6EA0
+P 9050 4800
+F 0 "SW?" H 9050 4950 50  0000 C CNN
+F 1 "SW_Push" H 9050 4750 50  0000 C CNN
+F 2 "" H 9050 5000 50  0001 C CNN
+F 3 "" H 9050 5000 50  0001 C CNN
+	1    9050 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CCF6ECC
+P 8700 4900
+F 0 "SW?" H 8700 5050 50  0000 C CNN
+F 1 "SW_Push" H 8700 4850 50  0000 C CNN
+F 2 "" H 8700 5100 50  0001 C CNN
+F 3 "" H 8700 5100 50  0001 C CNN
+	1    8700 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CCF6EFE
+P 8300 5000
+F 0 "SW?" H 8300 5150 50  0000 C CNN
+F 1 "SW_Push" H 8300 4950 50  0000 C CNN
+F 2 "" H 8300 5200 50  0001 C CNN
+F 3 "" H 8300 5200 50  0001 C CNN
+	1    8300 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CCF6F2E
+P 9300 5400
+F 0 "SW?" H 9300 5550 50  0000 C CNN
+F 1 "SW_Push" H 9300 5350 50  0000 C CNN
+F 2 "" H 9300 5600 50  0001 C CNN
+F 3 "" H 9300 5600 50  0001 C CNN
+	1    9300 5400
+	0    1    1    0   
+$EndComp
+Connection ~ 8000 5750
+$Comp
+L Device:R_Network08 RN?
+U 1 1 5CD1EAC8
+P 9050 4100
+F 0 "RN?" H 9430 4146 50  0000 L CNN
+F 1 "R_Network08" H 9430 4055 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 9525 4100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9050 4100 50  0001 C CNN
+	1    9050 4100
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	8000 5750 8000 6050
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5CD286CF
+P 9650 5300
+F 0 "SW?" H 9650 5450 50  0000 C CNN
+F 1 "SW_Push" H 9650 5250 50  0000 C CNN
+F 2 "" H 9650 5500 50  0001 C CNN
+F 3 "" H 9650 5500 50  0001 C CNN
+	1    9650 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 4650 8950 5300
+Wire Wire Line
+	8550 4750 8550 5400
+Wire Wire Line
+	9300 4550 9300 5200
+Wire Wire Line
+	9650 4450 9650 5100
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD84844
+P 8300 5200
+F 0 "#PWR?" H 8300 4950 50  0001 C CNN
+F 1 "GNDD" H 8304 5045 50  0000 C CNN
+F 2 "" H 8300 5200 50  0001 C CNN
+F 3 "" H 8300 5200 50  0001 C CNN
+	1    8300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD84884
+P 8550 5800
+F 0 "#PWR?" H 8550 5550 50  0001 C CNN
+F 1 "GNDD" H 8554 5645 50  0000 C CNN
+F 2 "" H 8550 5800 50  0001 C CNN
+F 3 "" H 8550 5800 50  0001 C CNN
+	1    8550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD848B4
+P 8700 5100
+F 0 "#PWR?" H 8700 4850 50  0001 C CNN
+F 1 "GNDD" H 8704 4945 50  0000 C CNN
+F 2 "" H 8700 5100 50  0001 C CNN
+F 3 "" H 8700 5100 50  0001 C CNN
+	1    8700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD848DD
+P 8950 5700
+F 0 "#PWR?" H 8950 5450 50  0001 C CNN
+F 1 "GNDD" H 8954 5545 50  0000 C CNN
+F 2 "" H 8950 5700 50  0001 C CNN
+F 3 "" H 8950 5700 50  0001 C CNN
+	1    8950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD84906
+P 9050 5000
+F 0 "#PWR?" H 9050 4750 50  0001 C CNN
+F 1 "GNDD" H 9054 4845 50  0000 C CNN
+F 2 "" H 9050 5000 50  0001 C CNN
+F 3 "" H 9050 5000 50  0001 C CNN
+	1    9050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD8492F
+P 9300 5600
+F 0 "#PWR?" H 9300 5350 50  0001 C CNN
+F 1 "GNDD" H 9304 5445 50  0000 C CNN
+F 2 "" H 9300 5600 50  0001 C CNN
+F 3 "" H 9300 5600 50  0001 C CNN
+	1    9300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD84958
+P 9400 4900
+F 0 "#PWR?" H 9400 4650 50  0001 C CNN
+F 1 "GNDD" H 9404 4745 50  0000 C CNN
+F 2 "" H 9400 4900 50  0001 C CNN
+F 3 "" H 9400 4900 50  0001 C CNN
+	1    9400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD84981
+P 9650 5500
+F 0 "#PWR?" H 9650 5250 50  0001 C CNN
+F 1 "GNDD" H 9654 5345 50  0000 C CNN
+F 2 "" H 9650 5500 50  0001 C CNN
+F 3 "" H 9650 5500 50  0001 C CNN
+	1    9650 5500
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	8000 4550 8100 4450
+Entry Wire Line
+	8000 4600 8100 4500
+Entry Wire Line
+	8000 4650 8100 4550
+Entry Wire Line
+	8000 4700 8100 4600
+Entry Wire Line
+	8000 4750 8100 4650
+Entry Wire Line
+	8000 4800 8100 4700
+Entry Wire Line
+	8000 4850 8100 4750
+Entry Wire Line
+	8000 4900 8100 4800
+Wire Wire Line
+	8100 4450 9350 4450
+Wire Wire Line
+	8100 4500 9250 4500
+Wire Wire Line
+	8100 4550 9150 4550
+Wire Wire Line
+	8100 4600 9050 4600
+Wire Wire Line
+	8100 4650 8950 4650
+Wire Wire Line
+	8100 4700 8700 4700
+Wire Wire Line
+	8100 4750 8550 4750
+Wire Wire Line
+	8100 4800 8300 4800
+Wire Wire Line
+	9350 4300 9350 4450
+Wire Wire Line
+	9250 4300 9250 4500
+Wire Wire Line
+	9150 4300 9150 4550
+Wire Wire Line
+	9050 4300 9050 4600
+Wire Wire Line
+	8950 4300 8950 4650
+Wire Wire Line
+	8850 4300 8850 4700
+Wire Wire Line
+	8850 4700 8700 4700
+Connection ~ 8700 4700
+Connection ~ 8950 4650
+Connection ~ 9050 4600
+Wire Wire Line
+	9150 4550 9300 4550
+Connection ~ 9150 4550
+Wire Wire Line
+	9250 4500 9400 4500
+Connection ~ 9250 4500
+Wire Wire Line
+	9350 4450 9650 4450
+Connection ~ 9350 4450
+Wire Wire Line
+	8750 4300 8750 4400
+Wire Wire Line
+	8750 4400 8550 4400
+Wire Wire Line
+	8550 4400 8550 4750
+Connection ~ 8550 4750
+Wire Wire Line
+	8650 4300 8650 4350
+Wire Wire Line
+	8650 4350 8300 4350
+Wire Wire Line
+	8300 4350 8300 4800
+Connection ~ 8300 4800
+$Comp
+L power:+5V #PWR?
+U 1 1 5CDE0EBB
+P 8800 3900
+F 0 "#PWR?" H 8800 3750 50  0001 C CNN
+F 1 "+5V" H 8815 4073 50  0000 C CNN
+F 2 "" H 8800 3900 50  0001 C CNN
+F 3 "" H 8800 3900 50  0001 C CNN
+	1    8800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3900 8650 3900
+Wire Wire Line
+	850  4900 4850 4900
+Wire Bus Line
+	4600 4800 4600 5500
+Wire Bus Line
+	6250 4800 6250 5750
+Wire Bus Line
+	6150 1250 6150 2800
+Wire Bus Line
+	4850 1250 4850 2850
+Wire Bus Line
+	8000 2800 8000 5750
 $EndSCHEMATC
